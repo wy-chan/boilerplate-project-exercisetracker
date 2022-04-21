@@ -10,10 +10,13 @@
   <body>
     <div class="container">
       <h1>Exercise tracker</h1>
-      <form action="/api/users" method="post">
+      <div class="form-container">
+      <form action="/api/users" method="post" class="newuser-div">
+        <div>
         <h3>Create a New User</h3>
         <p><code>POST /api/users</code></p>
         <input id="uname" type="text" name="username" placeholder="username" />
+        </div>
         <input type="submit" value="Submit" />
       </form>
       <form id="exercise-form" method="post"> 
@@ -25,12 +28,15 @@
         <input id="date" type="text" name="date" placeholder="date (yyyy-mm-dd)" />
         <input type="submit" value="Submit" />
       </form>
+        </div>
       <p>
+        <div class="notes-div">
         <strong>GET user's exercise log: </strong>
         <code>GET /api/users/:_id/logs?[from][&amp;to][&amp;limit]</code>
       </p>
       <p><strong>[ ]</strong> = optional</p>
       <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+      </div>
     </div>
     <script>
       const exerciseForm = document.getElementById("exercise-form");
