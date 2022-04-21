@@ -13,6 +13,7 @@
       <div class="form-container">
       <form action="/api/users" method="post" class="newuser-div">
         <div>
+          <p>Step 1:</p>
         <h3>Create a New User</h3>
         <p><code>POST /api/users</code></p>
         <input id="uname" type="text" name="username" placeholder="username" />
@@ -20,6 +21,7 @@
         <input type="submit" value="Submit" />
       </form>
       <form id="exercise-form" method="post"> 
+        <p>Step 2:</p>
         <h3>Add exercises</h3>
         <p><code>POST /api/users/:_id/exercises</code></p>
         <input id="uid" type="text" name=":_id" placeholder=":_id" />
@@ -48,5 +50,9 @@
         exerciseForm.submit();
       });
     </script>
+    <footer>
+<span class="notes">This is a <em><a href="https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/exercise-tracker">freecodecamp.org/</a></em> challenge completed by <em><a href="https://github.com/wy-chan">wy-chan</a></em>.</span>
+</footer>
   </body>
+  
 </html>
